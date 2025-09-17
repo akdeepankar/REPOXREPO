@@ -1,0 +1,66 @@
+#############################################################
+# Simplified System Architecture (Concise Version)
+# Audience: Quick onboarding & README inclusion
+#############################################################
+
+## High-Level Overview
+```mermaid
+flowchart LR
+    User((User)) --> FE[Frontend (Vercel / Next.js)] --> API[Flask API (Azure Container)]
+    API --> DB[(Supabase DB)]
+    API --> Embed[SentenceTransformer Model]
+    API -->|Optional geocode| Geo[(Nominatim)]
+```
+
+## Core Endpoints & Responsibilities
+- GET /pdf : Download external PDF, parse locally, return structured resume JSON (no DB write).
+- GET /rule : Read applicant + internships + interactions from Supabase, filter & enrich (optional geocode), return recommendation set.
+- POST /update_embeddings : Batch recompute embeddings for all internships & applicants, persist vectors in Supabase.
+
+## Internal Component View
+```mermaid
+flowchart TB
+    subgraph Container[Flask Container]
+        P[PDF Parser]
+        M[Matching & Filters]
+        E[Embedding Engine]
+        F[Flask Routes]
+    end
+    F --> P
+    F --> M
+    F --> E
+    F --> DB[(Supabase)]
+    E --> DB
+    M --> DB
+```
+
+## Sequence (Abbreviated) - /rule
+```mermaid
+sequenceDiagram
+    participant FE as Frontend
+    participant API as Flask API
+    participant DB as Supabase
+    participant GEO as Geocoder
+    FE->>API: GET /rule?applicant_id
+    API->>DB: Fetch applicant, internships, interactions
+    DB-->>API: Data sets
+    alt Has preferred locations
+        API->>GEO: Geocode each
+        GEO-->>API: lat/long
+    end
+    API->>API: Filter & assemble response
+    API-->>FE: JSON recommendations
+```
+
+## Operational Notes
+- Stateless container; all persistence in Supabase.
+- Embedding model loaded once at startup.
+- Geocoding is optional; can be disabled without changing core flow.
+- Keep /update_embeddings protected (admin or internal trigger).
+
+## One-Line Summary
+User -> Vercel Frontend -> Flask API -> Supabase; embeddings via SentenceTransformer; optional geocoding.
+
+#############################################################
+# End (Concise)
+#############################################################

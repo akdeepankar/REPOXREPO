@@ -1,0 +1,137 @@
+{
+  "homepage": {
+    "notifications": {
+      "newMatchTitle": "নতুন ইন্টার্নশিপ মিল",
+      "newMatchMessage": "আমরা আপনার প্রোফাইলের সাথে মিল থাকা ৩টি নতুন ইন্টার্নশিপ পেয়েছি"
+    },
+    "login": {
+      "title": "লগইন করুন",
+      "subtitle": "আপনার ইন্টার্নশিপ ড্যাশবোর্ডে প্রবেশ করুন অথবা অতিথি হিসেবে চালিয়ে যান"
+    },
+    "form": {
+      "title": "আপনার প্রোফাইল তৈরি করুন",
+      "subtitle": "ব্যক্তিগত সুপারিশ পেতে আপনার সম্পর্কে জানান"
+    },
+    "results": {
+      "title": "আপনার সুপারিশসমূহ",
+      "subtitle": "আপনার প্রোফাইলের ভিত্তিতে ব্যক্তিগত ইন্টার্নশিপ মিল"
+    },
+    "welcome": {
+      "title": "PM ইন্টার্নশিপ স্কিম",
+      "subtitle": "ডিজিটাল ইন্টার্নশিপ পোর্টাল",
+      "description": "AI-চালিত সুপারিশসমূহ গ্রামীণ এলাকা, আদিবাসী জেলা এবং শহুরে স্লামের ছাত্রদের জন্য প্রাসঙ্গিক ইন্টার্নশিপ খুঁজতে সহায়তা করে। সহজ, ব্যক্তিগত এবং সবার জন্য।",
+      "cta": "আমার উপযুক্ত ইন্টার্নশিপ খুঁজুন"
+    },
+    "empowering": {
+      "title": "ভারতের যুবসমাজকে ক্ষমতায়ন",
+      "subtitle": "আমাদের লক্ষ্য ডিজিটাল বিভাজন দূর করা এবং সকল ছাত্রদের জন্য সমান সুযোগ প্রদান করা"
+    },
+    "features": {
+      "smartMatching": {
+        "title": "স্মার্ট AI মিল",
+        "description": "উন্নত অ্যালগরিদম আপনার প্রোফাইলের সাথে উপযুক্ত ইন্টার্নশিপ মিল করে"
+      },
+      "inclusiveAccess": {
+        "title": "সমন্বিত প্রবেশ",
+        "description": "সীমিত ডিজিটাল অভিজ্ঞতা থাকা ছাত্রদের জন্য ডিজাইন করা"
+      },
+      "simpleProcess": {
+        "title": "সহজ প্রক্রিয়া",
+        "description": "নূন্যতম পাঠ সহ ব্যবহারকারী-বান্ধব ইন্টারফেস"
+      }
+    },
+    "eligibility": {
+      "title": "আপনি কি যোগ্য?",
+      "subtitle": "PM ইন্টার্নশিপ স্কিমের জন্য যোগ্যতা মানদণ্ড পূরণ করেন কিনা দেখুন",
+      "age": { "title": "বয়স", "value": "২১-২৪ বছর" },
+      "jobStatus": { "title": "চাকরির অবস্থা", "value": "পূর্ণকালীন চাকরি নেই" },
+      "education": { "title": "শিক্ষা", "value": "পূর্ণকালীন ভর্তি নেই" },
+      "familyIncome": { "title": "পারিবারিক আয়", "value": "কেউ ₹৮ লাখের বেশি উপার্জন করছে না\nপরিবারে কোনো সরকারি চাকরি নেই" },
+      "benefitsTitle": "PM ইন্টার্নশিপ স্কিমের মূল সুবিধাসমূহ",
+      "benefits": [
+        { "title": "১২ মাসের বাস্তব অভিজ্ঞতা", "subtitle": "ভারতের শীর্ষ কোম্পানিতে" },
+        { "title": "₹৪৫০০ মাসিক সহায়তা", "subtitle": "+ ₹৫০০ শিল্প দ্বারা" },
+        { "title": "₹৬০০০ এককালীন অনুদান", "subtitle": "অন্যান্য খরচের জন্য" },
+        { "title": "বিভিন্ন সেক্টর", "subtitle": "ভারতের শীর্ষ কোম্পানি" }
+      ]
+    },
+    "impact": {
+      "title": "আমাদের প্রভাব",
+      "subtitle": "ভারত জুড়ে পরিবর্তন আনছে",
+      "opportunities": "৫০০+",
+      "opportunitiesLabel": "ইন্টার্নশিপ সুযোগ",
+      "opportunitiesDesc": "সরকারি বিভাগে",
+      "students": "৫০,০০০+",
+      "studentsLabel": "উপকৃত ছাত্র",
+      "studentsDesc": "গ্রামীণ ও বঞ্চিত",
+      "success": "৯৫%",
+      "successLabel": "সাফল্যের হার",
+      "successDesc": "ছাত্র নিয়োগ"
+    },
+    "cta": {
+      "title": "আপনার যাত্রা শুরু করতে প্রস্তুত?",
+      "subtitle": "হাজার হাজার ছাত্র যোগ দিয়েছে যারা আমাদের প্ল্যাটফর্মের মাধ্যমে তাদের উপযুক্ত ইন্টার্নশিপ খুঁজে পেয়েছে",
+      "button": "আজই শুরু করুন",
+      "note": "মাত্র ২-৩ মিনিট লাগে • সম্পূর্ণ বিনামূল্যে • বহু ভাষা"
+    }
+  },
+  "navbar": {
+    "dashboard": "ড্যাশবোর্ড",
+    "internships": "ইন্টার্নশিপ",
+    "applications": "আবেদন",
+    "profile": "প্রোফাইল",
+    "logout": "লগ আউট",
+    "login": "লগইন",
+    "govOfIndia": "ভারত সরকার"
+  },
+  "dashboard": {
+  "signInRequired": "লগইন প্রয়োজন",
+  "pleaseSignIn": "আপনার ড্যাশবোর্ডে প্রবেশ করতে লগইন করুন।",
+  "welcome": "স্বাগতম",
+  "trackAll": "আপনার ইন্টার্নশিপ, আবেদন এবং প্রোফাইল অগ্রগতি এক জায়গায় ট্র্যাক করুন।",
+  "internships": "Internships",
+  "viewOpportunities": "View Opportunities",
+  "myApplications": "My Applications",
+  "trackSubmissions": "Track your submissions",
+  "goToApplications": "Go to Applications",
+  "profile": "Profile",
+  "profileUpToDate": "Your profile is up to date!",
+  "viewProfile": "View Profile",
+  "completeProfile": "Complete your profile for better matches",
+  "completeYourProfile": "Complete your Profile"
+  },
+  "profile": {
+    "signInRequired": "লগইন প্রয়োজন",
+    "pleaseSignIn": "আপনার ড্যাশবোর্ডে প্রবেশ করতে লগইন করুন।"
+  },
+  "login": {
+    "title": "লগইন করুন",
+    "subtitle": "আপনার ইন্টার্নশিপ ড্যাশবোর্ডে প্রবেশ করুন অথবা অতিথি হিসেবে চালিয়ে যান"
+  },
+  "internships": {
+    "signInRequired": "লগইন প্রয়োজন",
+    "pleaseSignIn": "ইন্টার্নশিপ দেখতে লগইন করুন।",
+    "title": "ইন্টার্নশিপ",
+    "getRecommendation": "সুপারিশ পান",
+    "searchPlaceholder": "ইন্টার্নশিপ খুঁজুন...",
+    "allLocations": "সব স্থান",
+    "allSectors": "সব সেক্টর",
+    "remoteOnsite": "রিমোট/অনসাইট",
+    "remote": "রিমোট",
+    "onsite": "অনসাইট",
+    "course": "কোর্স",
+    "sector": "সেক্টর",
+    "opportunities": "সুযোগ",
+    "yes": "হ্যাঁ",
+    "no": "না",
+    "noInternshipsFound": "কোনো ইন্টার্নশিপ পাওয়া যায়নি।"
+  },
+  "loginForm": {
+    "welcome": "স্বাগতম",
+    "signInToContinue": "আপনার ইন্টার্নশিপ ড্যাশবোর্ডে চালিয়ে যেতে লগইন করুন",
+    "googleSignInFailed": "Google লগইন ব্যর্থ হয়েছে",
+    "signingIn": "লগইন হচ্ছে...",
+    "signInWithGoogle": "Google দিয়ে লগইন করুন",
+    "continueAsGuest": "অতিথি হিসেবে চালিয়ে যান"
+  }
+}

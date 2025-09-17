@@ -1,0 +1,137 @@
+{
+  "homepage": {
+    "notifications": {
+      "newMatchTitle": "નવી ઇન્ટર્નશિપ મેળ",
+      "newMatchMessage": "અમે તમારી પ્રોફાઇલ સાથે મેળ ખાતી ૩ નવી ઇન્ટર્નશિપ્સ શોધી છે"
+    },
+    "login": {
+      "title": "લોગિન કરો",
+      "subtitle": "તમારા ઇન્ટર્નશિપ ડેશબોર્ડમાં પ્રવેશ કરો અથવા મહેમાન તરીકે ચાલુ રાખો"
+    },
+    "form": {
+      "title": "તમારી પ્રોફાઇલ બનાવો",
+      "subtitle": "વ્યક્તિગત ભલામણ મેળવવા માટે તમારા વિશે જણાવો"
+    },
+    "results": {
+      "title": "તમારી ભલામણો",
+      "subtitle": "તમારી પ્રોફાઇલના આધારે વ્યક્તિગત ઇન્ટર્નશિપ મેળ"
+    },
+    "welcome": {
+      "title": "PM ઇન્ટર્નશિપ યોજના",
+      "subtitle": "ડિજિટલ ઇન્ટર્નશિપ પોર્ટલ",
+      "description": "AI આધારિત ભલામણો ગ્રામ્ય વિસ્તારો, આદિવાસી જિલ્લાઓ અને શહેરી ઝૂંપડપટ્ટીના વિદ્યાર્થીઓને સંબંધિત ઇન્ટર્નશિપ શોધવામાં મદદ કરે છે. સરળ, વ્યક્તિગત અને દરેક માટે ડિઝાઇન કરેલ.",
+      "cta": "મારી યોગ્ય ઇન્ટર્નશિપ શોધો"
+    },
+    "empowering": {
+      "title": "ભારતના યુવાનોને સશક્ત બનાવવું",
+      "subtitle": "અમારું મિશન ડિજિટલ અંતર દૂર કરવું અને તમામ વિદ્યાર્થીઓ માટે સમાન તકો પૂરી પાડવી"
+    },
+    "features": {
+      "smartMatching": {
+        "title": "સ્માર્ટ AI મેળ",
+        "description": "અદ્યતન અલ્ગોરિધમ્સ તમારી પ્રોફાઇલ સાથે યોગ્ય ઇન્ટર્નશિપ મેળ કરે છે"
+      },
+      "inclusiveAccess": {
+        "title": "સમાવેશી પ્રવેશ",
+        "description": "સીમિત ડિજિટલ અનુભવ ધરાવતા વિદ્યાર્થીઓ માટે ડિઝાઇન કરેલ"
+      },
+      "simpleProcess": {
+        "title": "સરળ પ્રક્રિયા",
+        "description": "ન્યૂનતમ લખાણ સાથે વપરાશકર્તા મૈત્રીપૂર્ણ ઇન્ટરફેસ"
+      }
+    },
+    "eligibility": {
+      "title": "શું તમે લાયક છો?",
+      "subtitle": "PM ઇન્ટર્નશિપ યોજના માટે લાયકાત માપદંડ પૂરા કરો છો કે નહીં તપાસો",
+      "age": { "title": "ઉંમર", "value": "૨૧-૨૪ વર્ષ" },
+      "jobStatus": { "title": "નોકરીની સ્થિતિ", "value": "પૂર્ણકાળ નોકરી નથી" },
+      "education": { "title": "શિક્ષણ", "value": "પૂર્ણકાળ દાખલ નથી" },
+      "familyIncome": { "title": "કુટુંબની આવક", "value": "કોઈ ₹૮ લાખથી વધુ કમાતું નથી\nકુટુંબમાં કોઈ સરકારી નોકરી નથી" },
+      "benefitsTitle": "PM ઇન્ટર્નશિપ યોજનાના મુખ્ય લાભ",
+      "benefits": [
+        { "title": "૧૨ મહિના વાસ્તવિક અનુભવ", "subtitle": "ભારતની ટોચની કંપનીઓમાં" },
+        { "title": "₹૪૫૦૦ માસિક સહાય", "subtitle": "+ ₹૫૦૦ ઉદ્યોગ દ્વારા" },
+        { "title": "₹૬૦૦૦ એકમુશ્ત ગ્રાન્ટ", "subtitle": "અન્ય ખર્ચ માટે" },
+        { "title": "વિવિધ ક્ષેત્રો", "subtitle": "ભારતની ટોચની કંપનીઓ" }
+      ]
+    },
+    "impact": {
+      "title": "અમારો પ્રભાવ",
+      "subtitle": "ભારતભરમાં ફેરફાર લાવવો",
+      "opportunities": "૫૦૦+",
+      "opportunitiesLabel": "ઇન્ટર્નશિપ તકો",
+      "opportunitiesDesc": "સરકારી વિભાગોમાં",
+      "students": "૫૦,૦૦૦+",
+      "studentsLabel": "લાભાર્થી વિદ્યાર્થીઓ",
+      "studentsDesc": "ગ્રામ્ય અને વંચિત",
+      "success": "૯૫%",
+      "successLabel": "સફળતા દર",
+      "successDesc": "વિદ્યાર્થીઓની નિમણૂક"
+    },
+    "cta": {
+      "title": "તમારી યાત્રા શરૂ કરવા તૈયાર છો?",
+      "subtitle": "હજારો વિદ્યાર્થીઓ જોડાયા છે જેમણે અમારા પ્લેટફોર્મ દ્વારા તેમની યોગ્ય ઇન્ટર્નશિપ શોધી છે",
+      "button": "આજે શરૂ કરો",
+      "note": "માત્ર ૨-૩ મિનિટ લાગે છે • સંપૂર્ણપણે મફત • બહુભાષી"
+    }
+  },
+  "navbar": {
+    "dashboard": "ડેશબોર્ડ",
+    "internships": "ઇન્ટર્નશિપ",
+    "applications": "અરજી",
+    "profile": "પ્રોફાઇલ",
+    "logout": "લોગઆઉટ",
+    "login": "લોગિન",
+    "govOfIndia": "ભારત સરકાર"
+  },
+  "dashboard": {
+  "signInRequired": "લોગિન જરૂરી છે",
+  "pleaseSignIn": "તમારા ડેશબોર્ડમાં પ્રવેશ કરવા લોગિન કરો.",
+  "welcome": "સ્વાગત છે",
+  "trackAll": "તમારી ઇન્ટર્નશિપ, અરજી અને પ્રોફાઇલ પ્રગતિ એક જ જગ્યાએ ટ્રેક કરો.",
+  "internships": "Internships",
+  "viewOpportunities": "View Opportunities",
+  "myApplications": "My Applications",
+  "trackSubmissions": "Track your submissions",
+  "goToApplications": "Go to Applications",
+  "profile": "Profile",
+  "profileUpToDate": "Your profile is up to date!",
+  "viewProfile": "View Profile",
+  "completeProfile": "Complete your profile for better matches",
+  "completeYourProfile": "Complete your Profile"
+  },
+  "profile": {
+    "signInRequired": "લોગિન જરૂરી છે",
+    "pleaseSignIn": "તમારા ડેશબોર્ડમાં પ્રવેશ કરવા લોગિન કરો."
+  },
+  "login": {
+    "title": "લોગિન કરો",
+    "subtitle": "તમારા ઇન્ટર્નશિપ ડેશબોર્ડમાં પ્રવેશ કરો અથવા મહેમાન તરીકે ચાલુ રાખો"
+  },
+  "internships": {
+    "signInRequired": "લોગિન જરૂરી છે",
+    "pleaseSignIn": "ઇન્ટર્નશિપ જોવા માટે લોગિન કરો.",
+    "title": "ઇન્ટર્નશિપ",
+    "getRecommendation": "ભલામણ મેળવો",
+    "searchPlaceholder": "ઇન્ટર્નશિપ શોધો...",
+    "allLocations": "બધી જગ્યાઓ",
+    "allSectors": "બધા ક્ષેત્રો",
+    "remoteOnsite": "રિમોટ/ઓનસાઇટ",
+    "remote": "રિમોટ",
+    "onsite": "ઓનસાઇટ",
+    "course": "કોર્સ",
+    "sector": "ક્ષેત્ર",
+    "opportunities": "તકો",
+    "yes": "હા",
+    "no": "ના",
+    "noInternshipsFound": "કોઈ ઇન્ટર્નશિપ મળી નથી."
+  },
+  "loginForm": {
+    "welcome": "સ્વાગત છે",
+    "signInToContinue": "તમારા ઇન્ટર્નશિપ ડેશબોર્ડમાં ચાલુ રાખવા લોગિન કરો",
+    "googleSignInFailed": "Google લોગિન નિષ્ફળ ગયું",
+    "signingIn": "લોગિન થઈ રહ્યું છે...",
+    "signInWithGoogle": "Google સાથે લોગિન કરો",
+    "continueAsGuest": "મહેમાન તરીકે ચાલુ રાખો"
+  }
+}

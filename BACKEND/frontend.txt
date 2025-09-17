@@ -1,0 +1,35 @@
+The system flow works as follows:
+
+When a user accesses the app, they can log in using either their mobile number or email.
+
+After logging in, they are redirected to the homepage, where normal internship listings are visible.
+
+To apply for an internship, the user must complete an application form.
+
+If the user chooses to upload a CV instead of filling in the form manually:
+
+The CV is uploaded to a Supabase container.
+
+A file link is generated and sent to the backend.
+
+The backend performs OCR on the CV and returns a JSON file.
+
+The extracted data is used to pre-fill placeholders in the form, while any missing details can be entered manually by the user.
+
+Once the form is completed, it is saved in a Supabase table directly from Next.js.
+
+After saving, an embedding is generated for the user by calling the update embedding API in the backend.
+
+Once this process is complete, the user can view:
+
+Normal internships (general listings).
+
+Recommended internships, which are personalized.
+
+For recommendations, the frontend sends a GET request to the backend with the user ID.
+
+The backend runs a recommendation program and returns a JSON file containing suggested internships.
+
+The frontend then displays these results.
+
+Additionally, the frontend uses Next i18n to support all Indian languages in the portal.

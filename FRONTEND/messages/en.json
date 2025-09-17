@@ -1,0 +1,137 @@
+{
+  "homepage": {
+    "notifications": {
+      "newMatchTitle": "New Internship Match",
+      "newMatchMessage": "We found 3 new internships that match your profile"
+    },
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Access your internship dashboard or continue as guest"
+    },
+    "form": {
+      "title": "Create Your Profile",
+      "subtitle": "Tell us about yourself to get personalized recommendations"
+    },
+    "results": {
+      "title": "Your Recommendations",
+      "subtitle": "Personalized internship matches based on your profile"
+    },
+    "welcome": {
+      "title": "PM Internship Scheme",
+      "subtitle": "Digital Internship Portal",
+      "description": "AI-powered recommendations to help students from rural areas, tribal districts, and urban slums find relevant internship opportunities. Simple, personalized, and designed for everyone.",
+      "cta": "Find My Perfect Internship"
+    },
+    "empowering": {
+      "title": "Empowering India's Youth",
+      "subtitle": "Our mission is to bridge the digital divide and provide equal opportunities for all students"
+    },
+    "features": {
+      "smartMatching": {
+        "title": "Smart AI Matching",
+        "description": "Advanced algorithms match your profile with suitable internships"
+      },
+      "inclusiveAccess": {
+        "title": "Inclusive Access",
+        "description": "Designed for students with limited digital exposure"
+      },
+      "simpleProcess": {
+        "title": "Simple Process",
+        "description": "User-friendly interface with minimal text"
+      }
+    },
+    "eligibility": {
+      "title": "Are you Eligible?",
+      "subtitle": "Check if you meet the criteria for the PM Internship Scheme",
+      "age": { "title": "Age", "value": "21-24 Years" },
+      "jobStatus": { "title": "Job Status", "value": "Not Employed Full Time" },
+      "education": { "title": "Education", "value": "Not Enrolled Full Time" },
+      "familyIncome": { "title": "Family Income", "value": "No one earning more than ₹8 Lakhs PA\nNo Govt. Job in family" },
+      "benefitsTitle": "Core Benefits for PM Internship Scheme",
+      "benefits": [
+        { "title": "12 months real-life experience", "subtitle": "in India's top companies" },
+        { "title": "Monthly assistance of ₹4500", "subtitle": "+ ₹500 by Industry" },
+        { "title": "One-time Grant of ₹6000", "subtitle": "for incidentals" },
+        { "title": "Various Sectors", "subtitle": "Top Companies of India" }
+      ]
+    },
+    "impact": {
+      "title": "Our Impact",
+      "subtitle": "Making a difference across India",
+      "opportunities": "500+",
+      "opportunitiesLabel": "Internship Opportunities",
+      "opportunitiesDesc": "Across government departments",
+      "students": "50,000+",
+      "studentsLabel": "Students Benefited",
+      "studentsDesc": "Rural & underserved",
+      "success": "95%",
+      "successLabel": "Success Rate",
+      "successDesc": "Students placed"
+    },
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "subtitle": "Join thousands of students who have found their perfect internship through our platform",
+      "button": "Get Started Today",
+      "note": "Takes only 2-3 minutes • Completely free • Multi-language"
+    }
+  },
+  "navbar": {
+    "dashboard": "Dashboard",
+    "internships": "Internships",
+    "applications": "Applications",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "govOfIndia": "Government of India"
+  },
+  "dashboard": {
+  "signInRequired": "Sign In Required",
+  "pleaseSignIn": "Please sign in to access your dashboard.",
+  "welcome": "Welcome",
+  "trackAll": "Track your internships, applications, and profile progress all in one place.",
+  "internships": "Internships",
+  "viewOpportunities": "View Opportunities",
+  "myApplications": "My Applications",
+  "trackSubmissions": "Track your submissions",
+  "goToApplications": "Go to Applications",
+  "profile": "Profile",
+  "profileUpToDate": "Your profile is up to date!",
+  "viewProfile": "View Profile",
+  "completeProfile": "Complete your profile for better matches",
+  "completeYourProfile": "Complete your Profile"
+  },
+  "profile": {
+    "signInRequired": "Sign In Required",
+    "pleaseSignIn": "Please sign in to access your dashboard."
+  },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Access your internship dashboard or continue as guest"
+  },
+  "internships": {
+  "signInRequired": "Sign In Required",
+  "pleaseSignIn": "Please sign in to view internships.",
+  "title": "Internships",
+  "getRecommendation": "Get Recommendation",
+  "searchPlaceholder": "Search internships...",
+  "allLocations": "All Locations",
+  "allSectors": "All Sectors",
+  "remoteOnsite": "Remote/Onsite",
+  "remote": "Remote",
+  "onsite": "Onsite",
+  "course": "Course",
+  "sector": "Sector",
+  "opportunities": "Opportunities",
+  "yes": "Yes",
+  "no": "No",
+  "noInternshipsFound": "No internships found."
+  },
+  "loginForm": {
+    "welcome": "Welcome",
+    "signInToContinue": "Sign in to continue to your internship dashboard",
+    "googleSignInFailed": "Google sign-in failed",
+    "signingIn": "Signing in...",
+    "signInWithGoogle": "Sign in with Google",
+    "continueAsGuest": "Continue as Guest"
+  }
+}

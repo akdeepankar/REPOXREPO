@@ -1,0 +1,137 @@
+{
+  "homepage": {
+    "notifications": {
+      "newMatchTitle": "नई इंटर्नशिप मिलान",
+      "newMatchMessage": "हमने आपकी प्रोफ़ाइल से मेल खाने वाली 3 नई इंटर्नशिप्स पाई हैं"
+    },
+    "login": {
+      "title": "साइन इन करें",
+      "subtitle": "अपना इंटर्नशिप डैशबोर्ड एक्सेस करें या अतिथि के रूप में जारी रखें"
+    },
+    "form": {
+      "title": "अपनी प्रोफ़ाइल बनाएं",
+      "subtitle": "व्यक्तिगत अनुशंसाएँ प्राप्त करने के लिए अपने बारे में बताएं"
+    },
+    "results": {
+      "title": "आपकी अनुशंसाएँ",
+      "subtitle": "आपकी प्रोफ़ाइल के आधार पर व्यक्तिगत इंटर्नशिप मिलान"
+    },
+    "welcome": {
+      "title": "पीएम इंटर्नशिप योजना",
+      "subtitle": "डिजिटल इंटर्नशिप पोर्टल",
+      "description": "एआई-संचालित अनुशंसाएँ जो ग्रामीण क्षेत्रों, जनजातीय जिलों और शहरी स्लमों के छात्रों को प्रासंगिक इंटर्नशिप खोजने में मदद करती हैं। सरल, व्यक्तिगत और सभी के लिए डिज़ाइन किया गया।",
+      "cta": "मेरा परफेक्ट इंटर्नशिप खोजें"
+    },
+    "empowering": {
+      "title": "भारत के युवाओं को सशक्त बनाना",
+      "subtitle": "हमारा मिशन डिजिटल डिवाइड को पाटना और सभी छात्रों के लिए समान अवसर प्रदान करना है"
+    },
+    "features": {
+      "smartMatching": {
+        "title": "स्मार्ट एआई मिलान",
+        "description": "उन्नत एल्गोरिदम आपकी प्रोफ़ाइल के साथ उपयुक्त इंटर्नशिप्स का मिलान करते हैं"
+      },
+      "inclusiveAccess": {
+        "title": "समावेशी पहुँच",
+        "description": "सीमित डिजिटल एक्सपोजर वाले छात्रों के लिए डिज़ाइन किया गया"
+      },
+      "simpleProcess": {
+        "title": "सरल प्रक्रिया",
+        "description": "न्यूनतम पाठ के साथ उपयोगकर्ता-अनुकूल इंटरफ़ेस"
+      }
+    },
+    "eligibility": {
+      "title": "क्या आप पात्र हैं?",
+      "subtitle": "जांचें कि क्या आप पीएम इंटर्नशिप योजना के लिए पात्रता मानदंडों को पूरा करते हैं",
+      "age": { "title": "आयु", "value": "21-24 वर्ष" },
+      "jobStatus": { "title": "नौकरी की स्थिति", "value": "पूर्णकालिक रूप से नियोजित नहीं" },
+      "education": { "title": "शिक्षा", "value": "पूर्णकालिक नामांकित नहीं" },
+      "familyIncome": { "title": "पारिवारिक आय", "value": "कोई भी ₹8 लाख प्रति वर्ष से अधिक नहीं कमा रहा है\nपरिवार में कोई सरकारी नौकरी नहीं" },
+      "benefitsTitle": "पीएम इंटर्नशिप योजना के मुख्य लाभ",
+      "benefits": [
+        { "title": "12 महीने का वास्तविक जीवन अनुभव", "subtitle": "भारत की शीर्ष कंपनियों में" },
+        { "title": "₹4500 मासिक सहायता", "subtitle": "+ ₹500 उद्योग द्वारा" },
+        { "title": "₹6000 एकमुश्त अनुदान", "subtitle": "अन्य खर्चों के लिए" },
+        { "title": "विभिन्न क्षेत्र", "subtitle": "भारत की शीर्ष कंपनियाँ" }
+      ]
+    },
+    "impact": {
+      "title": "हमारा प्रभाव",
+      "subtitle": "भारत भर में बदलाव लाना",
+      "opportunities": "500+",
+      "opportunitiesLabel": "इंटर्नशिप अवसर",
+      "opportunitiesDesc": "सरकारी विभागों में",
+      "students": "50,000+",
+      "studentsLabel": "लाभान्वित छात्र",
+      "studentsDesc": "ग्रामीण और वंचित",
+      "success": "95%",
+      "successLabel": "सफलता दर",
+      "successDesc": "छात्रों की नियुक्ति"
+    },
+    "cta": {
+      "title": "क्या आप अपनी यात्रा शुरू करने के लिए तैयार हैं?",
+      "subtitle": "हज़ारों छात्रों में शामिल हों जिन्होंने हमारे प्लेटफ़ॉर्म के माध्यम से अपनी परफेक्ट इंटर्नशिप पाई है",
+      "button": "आज ही शुरू करें",
+      "note": "सिर्फ 2-3 मिनट लगते हैं • पूरी तरह से मुफ्त • बहुभाषी"
+    }
+  },
+  "navbar": {
+    "dashboard": "डैशबोर्ड",
+    "internships": "इंटर्नशिप्स",
+    "applications": "आवेदन",
+    "profile": "प्रोफ़ाइल",
+    "logout": "लॉगआउट",
+    "login": "लॉगिन",
+    "govOfIndia": "भारत सरकार"
+  },
+  "dashboard": {
+  "signInRequired": "साइन इन आवश्यक है",
+  "pleaseSignIn": "कृपया अपने डैशबोर्ड का उपयोग करने के लिए साइन इन करें।",
+  "welcome": "स्वागत है",
+  "trackAll": "अपने इंटर्नशिप, आवेदन और प्रोफाइल प्रगति को एक ही स्थान पर ट्रैक करें।",
+  "internships": "Internships",
+  "viewOpportunities": "View Opportunities",
+  "myApplications": "My Applications",
+  "trackSubmissions": "Track your submissions",
+  "goToApplications": "Go to Applications",
+  "profile": "Profile",
+  "profileUpToDate": "Your profile is up to date!",
+  "viewProfile": "View Profile",
+  "completeProfile": "Complete your profile for better matches",
+  "completeYourProfile": "Complete your Profile"
+  },
+  "profile": {
+    "signInRequired": "साइन इन आवश्यक है",
+    "pleaseSignIn": "कृपया अपने डैशबोर्ड का उपयोग करने के लिए साइन इन करें।"
+  },
+  "login": {
+    "title": "साइन इन करें",
+    "subtitle": "अपना इंटर्नशिप डैशबोर्ड एक्सेस करें या अतिथि के रूप में जारी रखें"
+  },
+  "internships": {
+    "signInRequired": "साइन इन आवश्यक है",
+    "pleaseSignIn": "इंटर्नशिप्स देखने के लिए कृपया साइन इन करें।",
+    "title": "इंटर्नशिप्स",
+    "getRecommendation": "अनुशंसा प्राप्त करें",
+    "searchPlaceholder": "इंटर्नशिप्स खोजें...",
+    "allLocations": "सभी स्थान",
+    "allSectors": "सभी क्षेत्र",
+    "remoteOnsite": "रिमोट/ऑनसाइट",
+    "remote": "रिमोट",
+    "onsite": "ऑनसाइट",
+    "course": "कोर्स",
+    "sector": "क्षेत्र",
+    "opportunities": "अवसर",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "noInternshipsFound": "कोई इंटर्नशिप नहीं मिली।"
+  },
+  "loginForm": {
+    "welcome": "स्वागत है",
+    "signInToContinue": "अपने इंटर्नशिप डैशबोर्ड पर जारी रखने के लिए साइन इन करें",
+    "googleSignInFailed": "Google साइन-इन विफल हुआ",
+    "signingIn": "साइन इन हो रहा है...",
+    "signInWithGoogle": "Google के साथ साइन इन करें",
+    "continueAsGuest": "अतिथि के रूप में जारी रखें"
+  }
+}
