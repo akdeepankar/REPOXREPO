@@ -44,11 +44,17 @@ geolocator = Nominatim(user_agent="internship_portal")
 # Education level ranking for comparison (lower number = lower level)
 EDUCATION_ORDER = {
     "diploma": 1,
+    "Diploma": 1,
     "graduation": 2,
+    "Graduation": 2,
+    "undergraduation": 2,
+    "under-graduation": 2,
     "post-graduation": 3,
+    "Post-Graduation": 3,
     "post graduation": 3,
     "post_graduation": 3,
     "ph.d": 4,
+    "Ph.d": 4,
     "phd": 4,
     "ph.d.": 4
 }
@@ -99,6 +105,14 @@ def rule():
             if coords:
                 location_coord = coords
         # Build required internship dict
+        # Ensure embedding is a list of floats, not a string
+        # emb = internship.get("embedding")
+        # if isinstance(emb, str):
+        #     try:
+        #         import ast
+        #         emb = ast.literal_eval(emb)
+        #     except Exception:
+        #         emb = []
         valid_internships.append({
             "id": internship.get("internship_id"),
             "location_coord": location_coord,
@@ -110,7 +124,8 @@ def rule():
         })
     # Remove internships that have been interacted with
     interacted_ids = {i.get("internship_id") for i in interactions}
-    valid_internships = [i for i in valid_internships if i.get("internship_id") not in interacted_ids]
+    # Each entry in valid_internships stores the internship id under key 'id'
+    valid_internships = [i for i in valid_internships if i.get("id") not in interacted_ids]
     # Convert preferred_locations to lat/lon using geopy
     preferred_locations = applicant[0].get("preferred_locations") if applicant else None
     location_coords = []
@@ -145,17 +160,27 @@ def rule():
         if not internships_df.empty:
             for col in ["id", "location_coord", "min_education_level", "specialization", "embedding", "posted_date"]:
                 if col in internships_df.columns:
-                    if col in ["location_coord", "embedding", "posted_date"]:
+                    if col == "posted_date":
+                        # Convert posted_date to pandas Timestamp, coerce errors to NaT
+                        internships_df[col] = pd.to_datetime(internships_df[col], errors="coerce")
+                    elif col == "location_coord":
+                        internships_df[col] = internships_df[col]   #.fillna("").map(normalize_text)
+                    elif col in ["min_education_level", "specialization"]:
                         internships_df[col] = internships_df[col].fillna("").map(normalize_text)
-                    else:
-                        internships_df[col] = internships_df[col]
-            
+                    # Do NOT normalize or stringify embedding here
+                    # else:
+                    #     internships_df[col] = internships_df[col]
             # Ensure min_education_numeric is always numeric
             internships_df["min_education_numeric"] = pd.to_numeric(internships_df["min_education_level"].fillna(0), errors="coerce").fillna(0).astype(int)
         return applicant_df, internships_df
 
     # Prepare input for process_applicant_json
     applicant_df, internships_df = process_applicant_json(applicant_id, location_coords, valid_internships)
+    # Filter out internships with empty or invalid embeddings
+    # def is_valid_embedding(emb):
+    #     return isinstance(emb, list) and len(emb) > 0 and all(isinstance(x, (float, int)) for x in emb)
+    # if "embedding" in internships_df.columns:
+    #     internships_df = internships_df[internships_df["embedding"].apply(is_valid_embedding)]
     # Use rank_for_applicant to get ranked output
     ranked = rank_for_applicant(applicant_df.iloc[0], internships_df)
     return jsonify({"ranked_internships": ranked})
