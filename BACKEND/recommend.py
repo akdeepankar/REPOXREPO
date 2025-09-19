@@ -145,31 +145,6 @@ def rule_filter(applicant_row, internships_df, max_posted_days=180):
 
     return df
 
-# -----------------------
-# # 5. Embedding prep
-# # -----------------------
-# EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-# model = SentenceTransformer(EMBED_MODEL)
-
-# def internship_representation(row):
-#     parts = [
-#         row.get('title',''),
-#         row.get('description',''),
-#         row.get('sector',''),
-#         ' '.join(row.get('skills_list', [])),
-#         ' '.join(split_list_field(row.get('tags','')))
-#     ]
-#     return ' | '.join([p for p in parts if p])
-
-# def applicant_representation(app_row):
-#     parts = [
-#         ' '.join(app_row.get('skills_list', [])),
-#         ' '.join(app_row.get('interests_list', [])),
-#         str(app_row.get('education_level','')),
-#         str(app_row.get('specialization',''))
-#     ]
-#     return ' | '.join([p for p in parts if p])
-
 # internships['repr'] = internships.apply(internship_representation, axis=1)
 # corpus = internships['repr'].tolist()
 # internship_embeddings = model.encode(corpus, convert_to_numpy=True, show_progress_bar=True)
@@ -183,21 +158,30 @@ def rule_filter(applicant_row, internships_df, max_posted_days=180):
 # -----------------------
 # 6. Ranking function
 # -----------------------
+EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+model = SentenceTransformer(EMBED_MODEL)
+
 def rank_for_applicant(applicant_row, internships_df, top_k=5):
     filtered = rule_filter(applicant_row, internships_df)
     if filtered.empty:
         filtered = rule_filter(applicant_row, internships_df, max_posted_days=365)
     if filtered.empty:
         return []
+    
+    corpus = filtered['embedding'].tolist()
+    internship_embeddings = model.encode(corpus, convert_to_numpy=True, show_progress_bar=True)
+    internship_embeddings = normalize(internship_embeddings, axis=1)
 
-    idxs = filtered.index.to_list()
-    emb_filtered = filtered['embedding'].tolist()
-    emb_filtered = normalize(emb_filtered, axis=1)
-
-    app_emb = np.array(applicant_row['embedding']).reshape(1, -1)
+    app_emb = model.encode(applicant_row['embedding'], convert_to_numpy = True)
+    app_emb = np.array(app_emb).reshape(1, -1)
     app_emb = normalize(app_emb, axis=1)
 
-    sims = cosine_similarity(app_emb, emb_filtered)[0]
+    idxs = filtered.index.to_list()
+
+    sims = cosine_similarity(app_emb, internship_embeddings)[0]
+    pd.set_option('display.max_columns', None)
+    print(sims[0])
+    print(internships_df)
 
     # skill overlap
     skill_scores = [
@@ -223,7 +207,7 @@ def rank_for_applicant(applicant_row, internships_df, top_k=5):
     spec_scores = filtered['spec_match'].tolist()
 
     # composite score
-    alpha, beta, gamma, delta, eps = 0.5, 0.2, 0.1, 0.15, 0.05
+    alpha, beta, gamma, delta, eps = 0.5, 0.2, 0.1, 0.05, 0.15
     final_scores = (
         alpha * sims +
         beta * np.array(skill_scores) +
